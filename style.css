@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+button,
+input {
+  font-family: "Montserrat", sans-serif;
+}
+main {
+  min-height: 100vh;
+  background-image: url(./images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 60px;
+}
+.container {
+  max-width: 730px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.red-block {
+  height: 338px;
+  width: 540px;
+  background-color: #f94558;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 125px;
+}
+
+.red-block img:first-child {
+  margin-bottom: 30px;
+  margin-top: 35px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+form {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+form input {
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  padding: 0 30px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #f95845;
+  border: none;
+  height: 60px;
+  width: 170px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #f94558;
+}
+
+form input::placeholder {
+  font-weight: 600;
+  color: #000;
+  opacity: 0.7;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contacts {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.contacts .contacts-btn {
+  height: 65px;
+  width: 65px;
+  background-color: #f95845;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contacts .contacts-btn.active {
+  background-color: #f94558;
+}
+
+.contacts .contacts-list {
+  position: absolute;
+  right: 0;
+  bottom: 110px;
+  display: none;
+}
+
+.contacts-list.active {
+  display: block;
+}
+.contacts .contacts-list::before {
+  background-image: url(./images/arrow.svg);
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  width: 40px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+
+.contacts .contacts-list a {
+  display: flex;
+  height: 60px;
+  width: 240px;
+  align-items: center;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.contacts .contacts-list a img {
+  max-width: 24px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.contacts .contacts-list a .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts .contacts-list a .info strong {
+  color: #fff;
+}
+
+.contacts .contacts-list a .info span {
+  font-size: 12px;
+  color: #000;
+  opacity: 0.5;
+}
+
+.contacts .contacts-list a.whats {
+  background-image: linear-gradient(
+    to bottom,
+    #20b038,
+    #34b945,
+    #44c351,
+    #53cc5e,
+    #60d66a
+  );
+}
+.contacts .contacts-list a.messenger {
+  background-image: linear-gradient(
+    to bottom,
+    #00b2ff,
+    #00a3ff,
+    #0092ff,
+    #007fff,
+    #006aff
+  );
+}
+.contacts .contacts-list a.phone {
+  background-color: #fff;
+}
+
+.contacts .contacts-list a.phone .info strong {
+  color: #f94558;
+}
